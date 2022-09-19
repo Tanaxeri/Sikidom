@@ -10,7 +10,7 @@ namespace Sikidomok
     {
 
         double Anegyszogoldal;
-
+        
         public double Anegyszogoldal1
         {
             get => Anegyszogoldal;
@@ -19,7 +19,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    Anegyszogoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet A-oldala a négyszögnek!");
 
                 }
                 else
@@ -46,7 +46,7 @@ namespace Sikidomok
 
         public Negyszog(double anegyszogoldal)
         {
-            Anegyszogoldal = anegyszogoldal;
+            Anegyszogoldal1 = anegyszogoldal;
         }
 
     }

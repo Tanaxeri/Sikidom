@@ -17,10 +17,10 @@ namespace Sikidomok
             get => sugar;
             set
             {
-                if (value < 0)
+                if (value < 0) 
                 {
+                    throw new ArgumentException($"{value} nem lehet körsugara!");
 
-                    sugar = 0;
 
                 }
                 else
@@ -39,7 +39,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    atmero = 0;
+                    throw new ArgumentException($"{value} nem lehet a kör átmérője!");
 
                 }
                 else
@@ -67,7 +67,7 @@ namespace Sikidomok
         public Kor(double sugar)
         {
 
-            this.sugar = sugar;
+            this.Sugar = sugar;
 
         }
     }

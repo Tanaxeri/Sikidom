@@ -20,7 +20,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    Ateglalapoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet A-oldala a téglalapnak!");
 
                 }
                 else
@@ -40,7 +40,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    Bteglalapoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet B-oldala a téglalapnak!");
 
                 }
                 else
@@ -67,8 +67,8 @@ namespace Sikidomok
 
         public Teglalap(double ateglalapoldal, double bteglalapoldal)
         {
-            Ateglalapoldal = ateglalapoldal;
-            Bteglalapoldal = bteglalapoldal;
+            Ateglalapoldal1 = ateglalapoldal;
+            Bteglalapoldal1 = bteglalapoldal;
         }
     }
 }

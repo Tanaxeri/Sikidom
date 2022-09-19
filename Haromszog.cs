@@ -21,7 +21,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    aharomszogoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet A-oldala a háromszögnek!");
 
                 }
                 else
@@ -40,7 +40,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    bharomszogoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet B-oldala a háromszögnek!");
 
                 }
                 else
@@ -59,7 +59,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    charomszogoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet C-oldala a háromszögnek!");
 
                 }
                 else
@@ -90,9 +90,9 @@ namespace Sikidomok
 
         public Haromszog(double aharomszogoldal, double bharomszogoldal, double charomszogoldal)
         {
-            this.aharomszogoldal = aharomszogoldal;
-            this.bharomszogoldal = bharomszogoldal;
-            this.charomszogoldal = charomszogoldal;
+            this.Aharomszogoldal = aharomszogoldal;
+            this.Bharomszogoldal = bharomszogoldal;
+            this.Charomszogoldal = charomszogoldal;
         }
     }
 }

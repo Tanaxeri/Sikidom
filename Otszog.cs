@@ -20,7 +20,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    Aotszogoldal = 0;
+                    throw new ArgumentException($"{value} nem lehet A-oldala az ötszögnek!");
 
                 }
                 else
@@ -39,7 +39,7 @@ namespace Sikidomok
                 if (value < 0)
                 {
 
-                    rsugarot = 0;
+                    throw new ArgumentException($"{value} nem lehet sugara a ötszögnek!");
 
                 }
                 else
@@ -66,8 +66,8 @@ namespace Sikidomok
 
         public Otszog(double aotszogoldal, double rsugarot)
         {
-            Aotszogoldal = aotszogoldal;
-            this.rsugarot = rsugarot;
+            Aotszogoldal1 = aotszogoldal;
+            this.Rsugarot = rsugarot;
         }
     }
 }
